@@ -3,7 +3,9 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
+    "build:css": "postcss styles/ --dir app/css --ext .css",
     "dev": "remix dev",
+    "dev:css": "postcss styles/ --dir app/css --ext .css --watch",
     "start": "remix-serve build"
   },
   "dependencies": {
@@ -20,6 +22,8 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "eslint": "^8.23.1",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
     "typescript": "^4.7.4"
   },
   "engines": {
